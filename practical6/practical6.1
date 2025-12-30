@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, i;
+
+    printf("Enter starting number (a): ");
+    scanf("%d", &a);
+
+    printf("Enter ending number (b): ");
+    scanf("%d", &b);
+
+    if (a <= b) {
+        for (i = a; i <= b; i++) {
+            printf("%d ", i);
+        }
+    } else {
+        for (i = a; i >= b; i--) {
+            printf("%d ", i);
+        }
+    }
+
+    return 0;
+}
